@@ -1,0 +1,38 @@
+SG90 servoları ve PCA9685 modülü 5V ile çalışır.
+
+Özetle, 8 adet SG90 servoyu eş zamanlı olarak bir PCA9685 servo kontrol modülü ile çalıştırmak için şunlara ihtiyacınız olacaktır:
+
+En az 7A (7.000mA) akım sağlayabilen bir güç kaynağı, 5V'ta.
+Yüksek akım yüklerini kaldırabilecek kablolama ve bağlantılar, voltaj düşüşlerini en aza indirmek için uygun kablo kalınlıkları.
+Güç kaynağı ve PCA9685 modülü için uygun ısı dağıtımı ve havalandırma, yüksek akımlar ısı üretebilir.
+
+
+Certainly! Here are the specific current and amperage numbers you would need to consider when running 8 SG90 servos with a PCA9685 servo controller module:
+
+Current Draw per SG90 Servo:
+
+Stall Current: Approximately 800mA (0.8A) per servo at maximum load
+Typical Operating Current: Around 200mA (0.2A) per servo with no load
+Total Current Draw for 8 SG90 Servos:
+
+Stall Current: 8 servos x 800mA = 6,400mA (6.4A)
+Typical Operating Current: 8 servos x 200mA = 1,600mA (1.6A)
+PCA9685 Module Current Draw:
+
+The PCA9685 module itself typically draws around 10mA (0.01A) of current.
+Recommended Power Supply Current Rating:
+To account for the maximum possible current draw and provide some headroom, it is recommended to use a power supply with a current rating of at least 7A (7,000mA) or higher.
+
+Voltage Requirements:
+
+The SG90 servos and the PCA9685 module operate at 5V.
+So, in summary, to run 8 SG90 servos simultaneously with a PCA9685 servo controller module, you would need:
+
+A power supply capable of providing at least 7A (7,000mA) of current at 5V.
+Wiring and connections capable of handling the high current loads, with appropriate wire gauges to minimize voltage drops.
+Proper heat dissipation and ventilation for the power supply and PCA9685 module, as high currents can generate significant heat.
+It's important to note that these numbers represent the maximum current draw scenario when all 8 servos are operating at stall conditions (maximum load). In typical use cases, the current draw may be lower, but it's always better to have a power supply with sufficient headroom to account for peak loads and ensure reliable operation.
+
+Additionally, it's recommended to distribute the load across multiple servo movements and avoid simultaneous high-speed movements of all servos to reduce the peak current draw and potential strain on the power supply.
+
+Source : Claude-3-Sonnet
